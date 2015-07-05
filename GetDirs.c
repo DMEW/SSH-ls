@@ -39,6 +39,7 @@ int GetDirs(char *currDir, fileobj **Files)
 	}
 	else
 	{
+		//Error
 		return 0;
 	}
 }

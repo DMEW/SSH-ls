@@ -14,7 +14,7 @@ int main()
 	{
 		//get directory listing of CWD
 		fileCount = GetDirs(currDir,&Files);
-		if(Files!=NULL)
+		if(fileCount!=0)
 		{
 			printDir(Files,fileCount);
 		}
@@ -41,7 +41,8 @@ void printDir(fileobj *f, int count)
 		strcat(output,f[iFile].name);
 		strcat(output,RESET);
 			
-		printf("%s\n",output);
+		printf("%s   ",output);
 		iFile++;
 	}
+	printf("\n");
 }
